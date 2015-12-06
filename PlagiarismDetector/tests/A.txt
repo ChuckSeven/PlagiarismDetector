@@ -1,0 +1,50 @@
+Diese File besteht aus A,B,C,D,E
+A
+This may be visualized as restricting the sample space to B. The logic behind this equation is that if the outcomes are restricted to B, this set serves as the new sample space.
+Note that this is a definition but not a theoretical result. We just denote the quantity P(A\cap B)/P(B) as P(A|B) and call it the conditional probability of A given B.
+As an axiom of probability[edit]
+Some authors, such as De Finetti, prefer to introduce conditional probability as an axiom of probability:
+P(A \cap B) = P(A|B)P(B)
+Although mathematically equivalent, this may be preferred philosophically; under major probability interpretations such as the subjective theory, conditional probability is considered a primitive entity. Further, this "multiplication axiom" introduces a symmetry with the summation axiom for mutually exclusive events:[4]
+-----
+B
+Definition with s-algebra[edit]
+If P(B) = 0, then the simple definition of P(A|B) is undefined. However, it is possible to define a conditional probability with respect to a s-algebra of such events (such as those arising from a continuous random variable).
+For example, if X and Y are non-degenerate and jointly continuous random variables with density ÉX,Y(x, y) then, if B has positive measure,
+
+P(X \in A \mid Y \in B) =
+\frac{\int_{y\in B}\int_{x\in A} f_{X,Y}(x,y)\,dx\,dy}{\int_{y\in B}\int_{x\in\Omega} f_{X,Y}(x,y)\,dx\,dy} .
+The case where B has zero measure can only be dealt with directly in the case that B = {y0}, representing a single point, in which case
+
+P(X \in A \mid Y = y_0) = \frac{\int_{x\in A} f_{X,Y}(x,y_0)\,dx}{\int_{x\in\Omega} f_{X,Y}(x,y_0)\,dx} .
+-----
+C
+Conditioning on a random variable[edit]
+Conditioning on an event may be generalized to conditioning on a random variable. Let X be a random variable; we assume for the sake of presentation that X is discrete, that is, X takes on only finitely many values x. Let A be an event. The conditional probability of A given X is defined as the random variable, written P(A|X), that takes on the value
+ P(A\mid X=x) 
+whenever
+X=x.
+More formally:
+P(A|X)(\omega)=P(A\mid X=X(\omega)) .
+The conditional probability P(A|X) is a function of X, e.g., if the function g is defined as
+g(x)= P(A\mid X=x),
+
+-----
+D
+te that P(A|X) and X are now both random variables. From the law of total probability, the expected value of P(A|X) is equal to the unconditional probability of A.
+Example[edit]
+Suppose that somebody secretly rolls two fair six-sided dice, and we must predict the outcome.
+Let A be the value rolled on die 1
+Let B be the value rolled on die 2
+What is the probability that A = 2?
+Table 1 shows the sample space of 36 outcomes
+Clearly, A = 2 in exactly 6 of the 36 outcomes, thus P(A=2) = 6/36 = 1/6.
+----
+E
+\Pr(R \mid B \cap Y) = \Pr(R \mid Y).\,
+Two random variables X and Y are conditionally independent given a third random variable Z if and only if they are independent in their conditional probability distribution given Z. That is, X and Y are conditionally independent given Z if and only if, given any value of Z, the probability distribution of X is the same for all values of Y and the probability distribution of Y is the same for all values of X.
+Two events R and B are conditionally independent given a s-algebra S if
+\Pr(R \cap B \mid \Sigma) = \Pr(R \mid \Sigma)\Pr(B \mid \Sigma)\ a.s.
+where \Pr(A \mid \Sigma)  denotes the conditional expectation of the indicator function of the event A, \chi_A, given the sigma algebra \Sigma. That is,
+\Pr(A \mid \Sigma) := \operatorname{E}[\chi_A\mid\Sigma].
+Two random variables X and Y are conditionally independent given a s-algebra S if the above equation holds for all R in s(X) and B in s(Y).
