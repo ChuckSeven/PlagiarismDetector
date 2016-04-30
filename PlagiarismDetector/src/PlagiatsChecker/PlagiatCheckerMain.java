@@ -158,7 +158,7 @@ public class PlagiatCheckerMain {
 	}
 
 	/**
-	 * Compares the file lenght and compressed file lenght of two files for
+	 * Compares the file length and compressed file length of two files for
 	 * similarities.
 	 * 
 	 * @param first
